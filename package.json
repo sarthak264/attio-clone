@@ -1,5 +1,10 @@
 {
   "name": "attio",
+  "description": "A responsive and modern clone of the Attio CRM landing page, built by Sarthak Sharma as a front-end development project. Made with React and Tailwind CSS.",
+  "author": {
+    "name": "Sarthak Sharma",
+    "email": "sarthaksharm372@gmail.com"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
