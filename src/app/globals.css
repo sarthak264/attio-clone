@@ -1,5 +1,128 @@
 @import 'tailwindcss';
 
+:root {
+  --blue-600: #266df0;
+  --blue-500: #538bf3;
+  --blue-400: #79a5f6;
+  --blue-300: #b3ccfa;
+  --blue-200: #d9e5fc;
+  --blue-100: #f5f8fe;
+
+  --dark-600: #232529;
+  --dark-500: #4b4f58;
+  --dark-400: #9ca1aa;
+  --dark-300: #b2b6bd;
+  --dark-200: #d3d5d9;
+  --dark-100: #f4f5f6;
+
+  --base-600: #1d1e20;
+  --base-500: #31373d;
+  --base-400: #555e67;
+  --base-300: #9098a0;
+  --base-200: #edeef0;
+  --base-100: #ffffff;
+
+  --fs-2xl: 22px;
+  --fs-xl: 20px;
+  --fs-lg: 18px;
+  --fs-md: 16px;
+  --fs-base: 14px;
+  --fs-sm: 12px;
+  --fs-xs: 10px;
+
+  --lh-2xl: calc(32 / 22);
+  --lh-xl: calc(28 / 20);
+  --lh-lg: calc(26 / 18);
+  --lh-md: calc(24 / 16);
+  --lh-base: calc(20 / 14);
+  --lh-sm: calc(18 / 12);
+  --lh-xs: calc(14 / 10);
+}
+
 @theme {
-  --color-outline: #1d1e20;
+  --color-blue-600: var(--blue-600);
+  --color-blue-500: var(--blue-500);
+  --color-blue-400: var(--blue-400);
+  --color-blue-300: var(--blue-300);
+  --color-blue-200: var(--blue-200);
+  --color-blue-100: var(--blue-100);
+  --color-gray-600: var(--dark-600);
+  --color-gray-500: var(--dark-500);
+  --color-gray-400: var(--dark-400);
+  --color-gray-300: var(--dark-300);
+  --color-gray-200: var(--dark-200);
+  --color-gray-100: var(--dark-100);
+  --color-neutral-600: var(--base-600);
+  --color-neutral-500: var(--base-500);
+  --color-neutral-400: var(--base-400);
+  --color-neutral-300: var(--base-300);
+  --color-neutral-200: var(--base-200);
+  --color-neutral-100: var(--base-100);
+  --color-outline: var(--base-600);
+
+  --font-inter: var(--font-inter);
+  --font-gilroy: var(--font-gilroy);
+
+  --text-2xl: var(--fs-2xl);
+  --text-xl: var(--fs-xl);
+  --text-lg: var(--fs-lg);
+  --text-md: var(--fs-md);
+  --text-base: var(--fs-base);
+  --text-sm: var(--fs-sm);
+  --text-xs: var(--fs-xs);
+
+  --text-2xl--line-height: var(--lh-2xl);
+  --text-xl--line-height: var(--lh-xl);
+  --text-lg--line-height: var(--lh-lg);
+  --text-md--line-height: var(--lh-md);
+  --text-base--line-height: var(--lh-base);
+  --text-sm--line-height: var(--lh-sm);
+  --text-xs--line-height: var(--lh-xs);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 92px;
+    line-height: 88px;
+    letter-spacing: -3.6px;
+  }
+
+  h2 {
+    font-size: 52px;
+    line-height: 58px;
+    letter-spacing: -1.2px;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.8px;
+  }
+
+  @media (width < 40rem) {
+    h1 {
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -1.5px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 38px;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-size: 24px;
+      line-height: 26px;
+      letter-spacing: -0.8px;
+    }
+  }
 }
