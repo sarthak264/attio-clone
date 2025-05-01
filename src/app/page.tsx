@@ -1,16 +1,24 @@
+'use client'
+
+import { useState } from 'react'
+import Navbar from './components/Navbar'
+import Navigation from './components/Navigation'
+import Tag from './components/Tag'
+import { tag } from './utils/content'
+
 export default function Home() {
+  const [isTagOpen, setIsTagOpen] = useState(true)
   return (
     <>
-      <h1>Attio</h1>
-      <h2>Attio</h2>
-      <h3>Attio</h3>
-      <p className='text-2xl'>Attio Landing Page Clone</p>
-      <p className='text-xl'>Attio Landing Page Clone</p>
-      <p className='text-lg'>Attio Landing Page Clone</p>
-      <p className='text-md'>Attio Landing Page Clone</p>
-      <p className='text-base'>Attio Landing Page Clone</p>
-      <p className='text-sm'>Attio Landing Page Clone</p>
-      <p className='text-xs'>Attio Landing Page Clone</p>
+      <Navigation>
+        <Navbar />
+        <Tag
+          headline={tag.headline}
+          link={tag.link}
+          isOpen={isTagOpen}
+          setIsOpen={setIsTagOpen}
+        />
+      </Navigation>
     </>
   )
 }

@@ -2,4 +2,9 @@ interface Icon {
   className?: string
 }
 
-export type { Icon }
+interface tagContent {
+  headline: string
+  link: string
+}
+
+export type { Icon, tagContent }
