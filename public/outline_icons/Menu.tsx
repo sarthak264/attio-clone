@@ -1,24 +1,24 @@
 import { Icon } from '@/app/utils/types'
 
-export default function Menu({ className = 'stroke-outline' }: Icon) {
+export default function Menu(props: Icon) {
   return (
     <svg
-      width='25'
-      height='25'
-      viewBox='0 0 25 25'
+      width='32'
+      height='32'
+      viewBox='0 0 32 32'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
+      className={`stroke-outline ${props.className}`}
     >
       <path
-        d='M5.75 9.875H19.75'
-        // stroke='#1D1E20'
+        d='M7 12.5H25.6667'
+        // stroke='#1D1F20'
         strokeWidth='2.5'
         strokeLinecap='round'
       />
       <path
-        d='M5.75 15.125H19.75'
-        // stroke='#1D1E20'
+        d='M7 19.5H25.6667'
+        // stroke='#1D1F20'
         strokeWidth='2.5'
         strokeLinecap='round'
       />

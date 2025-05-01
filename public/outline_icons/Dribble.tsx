@@ -1,7 +1,7 @@
 import { Icon } from '@/app/utils/types'
 
 // This icon can only be customized with fill class
-export default function Dribble({ className = 'fill-outline' }: Icon) {
+export default function Dribble(props: Icon) {
   return (
     <svg
       width='21'
@@ -9,7 +9,7 @@ export default function Dribble({ className = 'fill-outline' }: Icon) {
       viewBox='0 0 21 21'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
+      className={`fill-outline ${props.className}`}
     >
       <g opacity='0.9'>
         <path

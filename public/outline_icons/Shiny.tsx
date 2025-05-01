@@ -1,6 +1,6 @@
 import { Icon } from '@/app/utils/types'
 
-export default function Shiny({ className = 'stroke-outline' }: Icon) {
+export default function Shiny(props: Icon) {
   return (
     <svg
       width='25'
@@ -8,7 +8,7 @@ export default function Shiny({ className = 'stroke-outline' }: Icon) {
       viewBox='0 0 25 25'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
+      className={`stroke-outline ${props.className}`}
     >
       <g clipPath='url(#clip0_372_32161)'>
         <path

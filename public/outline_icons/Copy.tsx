@@ -1,6 +1,6 @@
 import { Icon } from '@/app/utils/types'
 
-export default function Copy({className = 'stroke-outline'}: Icon) {
+export default function Copy(props: Icon) {
   return (
     <svg
       width='25'
@@ -8,7 +8,7 @@ export default function Copy({className = 'stroke-outline'}: Icon) {
       viewBox='0 0 25 25'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
+      className={`stroke-outline ${props.className}`}
     >
       <mask
         id='mask0_372_32183'

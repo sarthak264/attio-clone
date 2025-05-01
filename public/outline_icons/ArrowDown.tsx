@@ -1,14 +1,14 @@
-import { Icon } from "@/app/utils/types";
+import { Icon } from '@/app/utils/types'
 
-export default function ArrowDown({className = 'stroke-black'}: Icon) {
+export default function ArrowDown(props: Icon) {
   return (
     <svg
       width='25'
       height='25'
       viewBox='0 0 25 25'
-      fill="none"
+      fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
+      className={`stroke-black ${props.className}`}
     >
       <path
         d='M6.5 9.5L12.5 15.5L18.5 9.5'
