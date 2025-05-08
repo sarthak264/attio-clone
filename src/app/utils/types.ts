@@ -7,4 +7,9 @@ interface tagContent {
   link: string
 }
 
-export type { Icon, tagContent }
+interface flagContent {
+  headline: string
+  link: string
+}
+
+export type { Icon, tagContent, flagContent }

@@ -15,7 +15,7 @@ export default function Tag(props: Tag) {
 
   return (
     <div
-      className={`my-2 mx-6 py-2 px-2.5 bg-neutral-600 rounded-xl text-center flex justify-between items-center gap-x-2.5 ${
+      className={`my-2 mx-6 py-2 px-2.5 bg-base-600 rounded-xl text-center flex justify-between items-center gap-x-2.5 ${
         props.isOpen ? '' : 'invisible'
       }`}
     >
