@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { ArrowRight } from '../../../public/outline_icons'
-import { flag } from '../utils/content'
+import { ArrowRight } from '@/app/icons/outline_icons'
+import { flag } from '@/app/utils/content'
 
 interface FlagProps {
   newTag?: boolean

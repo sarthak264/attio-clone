@@ -1,8 +1,8 @@
-import LogoDark from '../../../public/LogoDark'
-import { Dribble, Menu } from '../../../public/outline_icons'
-import { navItems } from '../utils/content'
-import BadgeNumber from './BadgeNumber'
-import Button from './Button'
+import LogoDark from '@/app/icons/LogoDark'
+import { Menu } from '@/app/icons/outline_icons'
+import { navItems } from '@/app/utils/content'
+import BadgeNumber from '@/app/components/BadgeNumber'
+import Button from '@/app/components/Button'
 import Link from 'next/link'
 
 export default function Navbar() {

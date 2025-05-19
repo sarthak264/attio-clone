@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import Button from './Button'
-import Flag from './Flag'
+import Button from '@/app/components/Button'
+import Flag from '@/app/components/Flag'
 import HeroImg from '@/app/images/hero-dashboard.png'
 import HeroBg from '@/app/images/hero-dashboard-bg.png'
-import { PlayIcon } from '../../../public/filled_icons'
+import { PlayIcon } from '@/app/icons/filled_icons'
 
 export default function Hero() {
   return (

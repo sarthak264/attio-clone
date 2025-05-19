@@ -1,9 +1,9 @@
 'use client'
 
 import Link from 'next/link'
-import { Cancel } from '../../../public/outline_icons'
+import { Cancel } from '@/app/icons/outline_icons'
 import { useState } from 'react'
-import { tag } from '../utils/content'
+import { tag } from '@/app/utils/content'
 
 export default function Tag() {
   const [isOpen, setIsOpen] = useState(true)
