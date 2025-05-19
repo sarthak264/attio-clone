@@ -9,7 +9,7 @@ interface FlagProps {
 export default function Flag(props: FlagProps) {
   return (
     <Link href={flag.link}>
-      <div className='mb-8 py-0.5 pl-0.5 pr-2 mx-6 flex justify-center items-center gap-x-1 bg-gray-100 text-base rounded-full whitespace-nowrap'>
+      <div className='py-0.5 pl-0.5 pr-2 flex justify-center items-center gap-x-1 bg-gray-100 text-base rounded-full whitespace-nowrap'>
         {props.newTag && (
           <span className='bg-base-600 text-base text-white rounded-full px-2 py-0.5'>
             New

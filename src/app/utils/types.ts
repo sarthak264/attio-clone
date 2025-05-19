@@ -12,4 +12,10 @@ interface flagContent {
   link: string
 }
 
-export type { Icon, tagContent, flagContent }
+interface navItem {
+  title: string
+  link: string
+  badgeNumber?: number
+}
+
+export type { Icon, tagContent, flagContent, navItem }
