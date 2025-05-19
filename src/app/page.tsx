@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Navigation from './components/Navigation'
 import Tag from './components/Tag'
 import Hero from './components/Hero'
+import Proven from './components/Proven'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Tag />
       </Navigation>
       <Hero />
+      <Proven />
     </>
   )
 }

@@ -3,8 +3,6 @@ import { Icon } from '@/app/utils/types'
 export default function Gmail(props: Icon) {
   return (
     <svg
-      width='36'
-      height='28'
       viewBox='0 0 36 28'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

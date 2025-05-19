@@ -3,8 +3,6 @@ import { Icon } from '@/app/utils/types'
 export default function Outlook(props: Icon) {
   return (
     <svg
-      width='40'
-      height='38'
       viewBox='0 0 40 38'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

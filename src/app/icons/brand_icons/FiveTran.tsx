@@ -3,8 +3,6 @@ import { Icon } from '@/app/utils/types'
 export default function FiveTran(props: Icon) {
   return (
     <svg
-      width='26'
-      height='36'
       viewBox='0 0 26 36'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

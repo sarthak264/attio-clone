@@ -3,8 +3,6 @@ import { Icon } from '@/app/utils/types'
 export default function Census(props: Icon) {
   return (
     <svg
-      width='40'
-      height='36'
       viewBox='0 0 40 36'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
