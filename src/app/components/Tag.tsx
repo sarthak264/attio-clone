@@ -13,18 +13,18 @@ export default function Tag() {
 
   return (
     <div
-      className={`py-2 px-2.5 lg:p-3 bg-base-600 rounded-xl text-center flex justify-between items-center gap-x-2.5 ${
+      className={`bg-base-600 flex items-center justify-between gap-x-2.5 rounded-xl px-2.5 py-2 text-center lg:p-3 ${
         isOpen ? '' : 'hidden'
       }`}
     >
-      <p className='text-sm text-white max-w-[225px] sm:max-w-full mx-auto'>
+      <p className='mx-auto max-w-[225px] text-sm text-white sm:max-w-full'>
         {tag.headline}
-        <Link href={tag.link} className='underline ml-1'>
+        <Link href={tag.link} className='ml-1 underline'>
           Read more
         </Link>
       </p>
       <button onClick={toggleTag} className='cursor-pointer'>
-        <Cancel className='stroke-white size-5' />
+        <Cancel className='size-5 stroke-white' />
       </button>
     </div>
   )

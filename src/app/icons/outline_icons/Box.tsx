@@ -1,4 +1,4 @@
-import { Icon } from "@/app/utils/types";
+import { Icon } from '@/app/utils/types'
 
 // This Icon can't be customized with stroke class
 export default function Box(props: Icon) {

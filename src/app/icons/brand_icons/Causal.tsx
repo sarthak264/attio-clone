@@ -1,4 +1,4 @@
-import { Icon } from "@/app/utils/types";
+import { Icon } from '@/app/utils/types'
 
 export default function Causal(props: Icon) {
   return (
@@ -12,7 +12,7 @@ export default function Causal(props: Icon) {
     >
       <mask
         id='mask0_367_28429'
-        style={{maskType: 'luminance'}}
+        style={{ maskType: 'luminance' }}
         maskUnits='userSpaceOnUse'
         x='0'
         y='0'

@@ -4,7 +4,7 @@ interface BadgeProps {
 
 export default function BadgeNumber({ number }: BadgeProps) {
   return (
-    <div className='size-4 bg-base-600 flex justify-center items-center text-xs text-white rounded-full'>
+    <div className='bg-base-600 flex size-4 items-center justify-center rounded-full text-xs text-white'>
       {number}
     </div>
   )

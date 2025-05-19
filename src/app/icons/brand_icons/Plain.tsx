@@ -13,7 +13,7 @@ export default function Plain(props: Icon) {
       <g clipPath='url(#clip0_372_32202)'>
         <mask
           id='mask0_372_32202'
-          style={{maskType: 'luminance'}}
+          style={{ maskType: 'luminance' }}
           maskUnits='userSpaceOnUse'
           x='0'
           y='0'

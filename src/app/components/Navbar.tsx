@@ -7,15 +7,15 @@ import Link from 'next/link'
 
 export default function Navbar() {
   return (
-    <div className='flex justify-between items-center lg:justify-start'>
-      <LogoDark className='w-[90px] lg:w-[100px] shrink-0' />
-      <div className='hidden ml-16 lg:flex '>
+    <div className='flex items-center justify-between lg:justify-start'>
+      <LogoDark className='w-[90px] shrink-0 lg:w-[100px]' />
+      <div className='ml-16 hidden lg:flex'>
         {navItems.map(({ title, link, badgeNumber }, i) => {
           return (
-            <div className='py-2 px-4' key={i}>
+            <div className='px-4 py-2' key={i}>
               <Link
                 href={link}
-                className='flex justify-center items-center gap-1'
+                className='flex items-center justify-center gap-1'
               >
                 {title}
                 {badgeNumber && <BadgeNumber number={badgeNumber} />}
@@ -24,11 +24,11 @@ export default function Navbar() {
           )
         })}
       </div>
-      <div className='hidden lg:flex gap-x-3 lg:ml-auto'>
-        <Button className='py-1.75 border-[1px] border-base-200'>
+      <div className='hidden gap-x-3 lg:ml-auto lg:flex'>
+        <Button className='border-base-200 border-[1px] py-1.75'>
           Sign In
         </Button>
-        <Button className='py-1.75 bg-base-600 border-base-400 border-[1px] text-base-100'>
+        <Button className='bg-base-600 border-base-400 text-base-100 border-[1px] py-1.75'>
           Start for free
         </Button>
       </div>
