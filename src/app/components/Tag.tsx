@@ -1,31 +1,29 @@
+'use client'
+
 import Link from 'next/link'
 import { Cancel } from '../../../public/outline_icons'
+import { useState } from 'react'
+import { tag } from '../utils/content'
 
-interface Tag {
-  headline: string
-  link: string
-  isOpen: boolean
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
-}
-
-export default function Tag(props: Tag) {
+export default function Tag() {
+  const [isOpen, setIsOpen] = useState(true)
   function toggleTag() {
-    props.setIsOpen(false)
+    setIsOpen(false)
   }
 
   return (
     <div
-      className={`my-2 mx-6 py-2 px-2.5 bg-base-600 rounded-xl text-center flex justify-between items-center gap-x-2.5 ${
-        props.isOpen ? '' : 'invisible'
+      className={`py-2 px-2.5 lg:p-3 bg-base-600 rounded-xl text-center flex justify-between items-center gap-x-2.5 ${
+        isOpen ? '' : 'hidden'
       }`}
     >
-      <p className='text-sm text-white max-w-[225px] mx-auto'>
-        {props.headline}
-        <Link href={props.link} className='underline ml-1'>
+      <p className='text-sm text-white max-w-[225px] sm:max-w-full mx-auto'>
+        {tag.headline}
+        <Link href={tag.link} className='underline ml-1'>
           Read more
         </Link>
       </p>
-      <button onClick={toggleTag}>
+      <button onClick={toggleTag} className='cursor-pointer'>
         <Cancel className='stroke-white size-5' />
       </button>
     </div>
