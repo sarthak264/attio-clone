@@ -25,10 +25,10 @@ export default function Navbar() {
         })}
       </div>
       <div className='hidden gap-x-3 lg:ml-auto lg:flex'>
-        <Button className='border-base-200 border-[1px] py-1.75'>
+        <Button theme='light' size='sm'>
           Sign In
         </Button>
-        <Button className='bg-base-600 border-base-400 text-base-100 border-[1px] py-1.75'>
+        <Button theme='dark' size='sm'>
           Start for free
         </Button>
       </div>
